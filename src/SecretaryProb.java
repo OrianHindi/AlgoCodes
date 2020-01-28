@@ -15,13 +15,13 @@ public class SecretaryProb {
         double avg=0;
         for (int i = 0; i <arr.length ; i++) {
             sum=sum+arr[i];
-            avg+=sum;
+           avg+=sum;
         }
         return avg/arr.length;
     }
 
     public static void main(String[] args) {
-        int[] time = {1,2,3,4,5};
+        int[] time = {3,8,5};
         double x = getAvgTime(time);
         System.out.println(x);
     }
