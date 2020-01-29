@@ -23,7 +23,7 @@ public class NumbersGame {
         int[][] Mat = buildMat(arr);
         for (int k = 0; k <n ; k++) {
             for (int l = 0; l <n ; l++) {
-                if(Mat[k][l]!=0)
+
                 System.out.print(Mat[k][l] + ", ");
             }
             System.out.println();

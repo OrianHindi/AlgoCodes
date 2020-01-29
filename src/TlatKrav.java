@@ -10,14 +10,14 @@ public class TlatKrav {
         for (int i = 0; i <num ; i++) {
             int scenario = (int)(Math.random()*2)+1;
             switch (scenario){
-                case 1:
+                case 1:     //A start b is dead c try to kill a ,if kill won else a won.
                     double isKilled = Math.random();
                     if(isKilled>Chit) cWin++;
                     else aWin++;
                 break;
-                case 2:
+                case 2:  //b start.
                     double isAkilled = Math.random();
-                    if(isAkilled<=Bhit){
+                    if(isAkilled<=Bhit){    //a is dead now c try kill b and then b try to kill c.
                         boolean[] live ={true,true};
                         while (live[1] && live[0]) {
                             double isBkilled = Math.random();
@@ -32,7 +32,7 @@ public class TlatKrav {
                             }
                         }
                     }
-                    else{
+                    else{    //a isnt dead, then a killed b then c try kill a.
                        isAkilled=Math.random();
                        if(isAkilled>=Chit) cWin++;
                        else aWin++;
