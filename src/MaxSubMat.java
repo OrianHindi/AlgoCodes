@@ -17,7 +17,13 @@ public class MaxSubMat {
                 }
             }
         }
-        return maxDim;
+        int counter =0;
+        for (int i = 0; i <n ; i++) {
+            for (int j = 0; j <n ; j++) {
+                if(help[i][j]>=maxDim)counter++;
+            }
+        }
+        return counter;
     }
     public static int countsubMat(int[][] mat,int size){
         int n = mat.length;

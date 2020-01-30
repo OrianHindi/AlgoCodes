@@ -52,7 +52,6 @@ public class GlassBalls {
                     if(temp[i][j]>res){
                         temp[i][j]=res;
                     }
-
                 }
             }
         }
